@@ -61,3 +61,14 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
+
+.navbar-primary {
+	background-color: teal;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	border: thin;
+}

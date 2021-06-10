@@ -1,14 +1,21 @@
 <script>
-	let name = "John Doe";
-	let points = 100;
+	import Navbar from "./Navbar.svelte";
+	import Player from "./Player.svelte";
 
-	const addPoint = () => {
-		points += 1
-	};
-
-	const removePoint = () => {
-		points -= 1
-	};
+	let players = [
+		{
+			name: "John Doe",
+			points: 53
+		},
+		{
+			name: "Sam Smith",
+			points: 45
+		},
+		{
+			name: "Sara Wilson",
+			points: 47
+		}
+	];
 </script>
 
 <style>
@@ -23,15 +30,13 @@
 	}
 </style>
 
+<Navbar />
 <div class="container">
-	<div class="card">
-		<h1>{name}</h1>
-		<h3>{points}</h3>
-		<button class="btn" on:click={addPoint}>
-			+1
-		</button>
-		<button class="btn btn-dark" on:click={removePoint}>
-			-1
-		</button>
-	</div>
+	{#if players.length === 0}
+		<p> No Players </p>
+	{:else}
+		{#each players as player}
+			<Player name={players.name} points={players.points} />
+		{/each}
+	{/if}
 </div>
