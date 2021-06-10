@@ -19,9 +19,8 @@
 		showControls = !showControls
 	};
 
-	const onDelete = () => {
-		dispatch("removeplayer", name);
-	};
+	const onDelete = () => dispatch("removeplayer", name);
+	
 </script>
 
 <style>
