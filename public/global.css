@@ -73,11 +73,13 @@ button:focus {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	border-radius: 5px;
 }
 
 .controls-pointsInput {
 	display: flex;
 	margin: 5px;
+	border-radius: 5px;
 }
 
 .navbar-header {
@@ -113,6 +115,8 @@ button:focus {
 	width: 50px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
 }
 
 .card {
@@ -131,6 +135,7 @@ button:focus {
 }
 
 .btn-delete-player {
-	background-color: gray;
+	background-color: #ff3e00;
 	padding: 9px;
+	border-radius: 5px;
 }
