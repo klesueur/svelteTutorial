@@ -45,9 +45,11 @@ input:disabled {
 }
 
 button {
-	color: #333;
-	background-color: #f4f4f4;
+	color: white;
+	background-color: teal;
 	outline: none;
+	padding: 15px;
+	margin: 5px;
 }
 
 button:disabled {
@@ -62,14 +64,60 @@ button:focus {
 	border-color: #666;
 }
 
-.navbar-primary {
+.controls {
+	display: flex;
+	flex-direction: column;
+}
+
+.controls-btns {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.controls-pointsInput {
+	display: flex;
+	margin: 5px;
+}
+
+.navbar-header {
 	background-color: teal;
 	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 10px;
+}
+
+.form {
+	margin: 5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.card-header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.points-display {
+
+}
+
+.btn-toggle {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
 }
 
 .card {
 	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 15px;
+	margin: 10px;
 }

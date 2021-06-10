@@ -32,20 +32,26 @@
 </style>
 
 <div class="card">
-	<h1>
+	<h1 class="card-header">
 		{name}
 		<button class="btn-toggle" on:click={toggleControls}>
 			{#if showControls} - {:else} + {/if}
 		</button>
 	</h1>
-	<h3>Points: {points}</h3>
+	<h3 class="points-display"> Points: {points} </h3>
 	{#if showControls}
-		<button class="btn" on:click={addPoint}>
-			+1
-		</button>
-		<button class="btn btn-dark" on:click={removePoint}>
-			-1
-		</button>
-		<input type="number" bind:value={points} />
+        <div class="controls">
+            <div class="controls-btns">
+                <button class="btn" on:click={addPoint}>
+                    +1
+                </button>
+                <button class="btn btn-dark" on:click={removePoint}>
+                    -1
+                </button>
+            </div>
+            <div class="controls-pointsInput">
+                <input type="number" bind:value={points} />
+            </div>
+        </div>
 	{/if}
 </div>
