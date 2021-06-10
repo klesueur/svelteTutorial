@@ -123,3 +123,14 @@ button:focus {
 	margin: 15px;
 	border-style: dashed;
 }
+
+.delete {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.btn-delete-player {
+	background-color: gray;
+	padding: 9px;
+}

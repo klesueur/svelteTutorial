@@ -54,4 +54,9 @@
             </div>
         </div>
 	{/if}
+	<div class="delete">
+		<button class="btn-delete-player">
+			Delete Player
+		</button>
+	</div>
 </div>
