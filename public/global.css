@@ -69,6 +69,7 @@ button:focus {
 	justify-content: center;
 	align-items: center;
 }
+
 .card {
-	border: thin;
+	display: flex;
 }
