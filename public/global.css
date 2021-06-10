@@ -96,15 +96,16 @@ button:focus {
 	align-items: center;
 }
 
+.submit-input {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .card-header {
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-}
-
-.points-display {
-
 }
 
 .btn-toggle {
@@ -119,5 +120,6 @@ button:focus {
 	align-items: center;
 	flex-direction: column;
 	padding: 15px;
-	margin: 10px;
+	margin: 15px;
+	border-style: dashed;
 }
